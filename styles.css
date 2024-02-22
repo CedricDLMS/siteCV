@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+header {
+    border: 1px solid black;
+}
+.top{
+    display: flex;
+}
+.navLi{
+    float: left;
+    border: 1px solid black;    
+    list-style-type: none;
+}
+main {
+    border: 1px solid red;
+    width: 100vw;
+}
+footer {
+    border: 1px solid green;
+}
+
+
+@media screen and (min-width: 601px) {
+    main {
+      font-size: 1.5vw;
+    }
+    .photoCandidat{
+        min-width: 10%;
+        min-height: 10%;
+        max-width: 15%;
+        max-height: 15%;
+    }
+    .menuIcon{
+        background-size: contain;
+        width: auto;
+        height: 25px;
+        margin-block: auto;
+        position: absolute;
+        right: 3%;
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    main{
+      font-size: 5vw;
+      
+    }
+    header {
+        position: fixed;
+    }
+    .photoCandidat{
+        background-size: contain;
+        width: auto;
+        height: 50px;
+        margin-block: auto;
+    }
+    .menuIcon{
+        background-size: contain;
+        width: auto;
+        height: 25px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 10px;
+    }
+  }
