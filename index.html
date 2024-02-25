@@ -6,21 +6,33 @@
     <meta name="description" content="CV en Ligne Cédric DELMAS 2024">
     <title>CV Cédric DELMAS</title>
     <link rel="stylesheet" href="./styles.css">
+    <script>
+
+        function afficheMenu(){
+            var navUl = document.getElementById('navU');
+            var navElement = document.getElementById('nav');
+            if (navElement.style.display === 'none' || navElement.style.display === '') {
+            navElement.style.display = 'flex';
+            navUl.style.display = 'block';
+            } else {
+            navElement.style.display = 'none';
+        }
+}
+    </script>
 </head>
 <body>
     <header>
             <img class="photoCandidat" src="./photo.png" alt="photo Candidat">
-            <nav>
-                <ul class="navUl">
+            <nav id="nav">
+                <ul class="navUl" id="navU">
                     <li class="navLi"><a href="#experiences" title="Renvois vers la section Expériences">Expériences professionnelles</a></li>
                     <li class="navLi"><a href="#formations" title="Renvois vers la section Formations">Formations</a></li>
                     <li class="navLi"><a href="#autoFormation" title="Renvois vers la section auto Formation">Auto-Formations</a></li>
                     <li class="navLi"><a href="#competences" title="Renvois vers la section Compétences">Compétences</a></li>
                     <li class="navLi"><a href="#meContacter" title="Renvois vers la section Me Contacter avec un formulaire de contact">Contactez-Moi</a></li>
-                    <li class="navLi"><a href="#mesContacts" title="Renvois vers la section Contact">mes Contacts</a></li>
                 </ul>
             </nav>
-            <img src="./bars-solid.svg" alt="icone-menu" class="menuIcon">
+            <img src="./bars-solid.svg" alt="icone-menu" class="menuIcon" onclick="afficheMenu()">
             </header> 
     <main>
         <h1> CV Cédric DELMAS</h1>
